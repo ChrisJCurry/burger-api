@@ -41,6 +41,7 @@ export class BurgersController extends BaseController {
     }
   }
 
+  //async currently doesnt do anything, once we use separate DBs it will
   async edit(req, res, next) {
       try {
           let editedBurger = req.body

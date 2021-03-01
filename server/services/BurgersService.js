@@ -22,6 +22,7 @@ class BurgersService {
   async create(newBurger) {
     newBurger.id = id++
     DbBurger.burgers.push(newBurger)
+    return newBurger
   }
 
   //loops through arrays values to make foundburger's keys equal to editedBurger's keys
